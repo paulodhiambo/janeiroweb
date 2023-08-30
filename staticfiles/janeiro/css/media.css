@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin-top: 10em;
+}
+
+body, html {
+  width: 100%;
+  height: auto;
+  cursor: default;
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, 0.9725490196), rgba(255, 255, 255, 0.9725490196)), url("/assets/doodle3.jpg");
+  background-position: center;
+  background-size: 50em;
+  background-repeat: repeat;
+}
+
+a {
+  position: relative;
+  color: #0081C9;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 68%;
+  max-width: 68em;
+  margin: auto;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 780px) {
+  .wrapper {
+    width: 88%;
+    margin: auto;
+    height: 100%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin-top: 10em;
+}
+
+body, html {
+  width: 100%;
+  height: auto;
+  cursor: default;
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, 0.9725490196), rgba(255, 255, 255, 0.9725490196)), url("/assets/doodle3.jpg");
+  background-position: center;
+  background-size: 50em;
+  background-repeat: repeat;
+}
+
+a {
+  position: relative;
+  color: #0081C9;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 68%;
+  max-width: 68em;
+  margin: auto;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 780px) {
+  .wrapper {
+    width: 88%;
+    margin: auto;
+    height: 100%;
+  }
+}
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4em;
+  box-shadow: 0 0 8px #ececec;
+  background: #fff;
+  z-index: 1000;
+}
+.nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .wrapper .logo {
+  position: relative;
+}
+.nav .wrapper .logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.nav .wrapper .logo a img {
+  position: relative;
+  width: 2.2em;
+  height: auto;
+}
+.nav .wrapper .logo a h4 {
+  position: relative;
+  font-size: 1.2em;
+  color: #144272;
+}
+.nav .wrapper .menu {
+  position: relative;
+}
+.nav .wrapper .menu ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4em;
+}
+.nav .wrapper .menu ul li {
+  position: relative;
+}
+.nav .wrapper .menu ul li a {
+  position: relative;
+  color: #1d1d1d;
+  padding: 7px 14px;
+  font-size: 0.9em;
+}
+.nav .wrapper .menu ul li .cta {
+  background: #0081C9;
+  color: #fff;
+  font-weight: 600;
+}
+.nav .wrapper .menu .ex {
+  display: none;
+}
+.nav .wrapper .sw {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .nav .wrapper .menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: -100vw;
+    z-index: 1000;
+    padding: 2em 1.5em;
+    background: linear-gradient(rgba(255, 255, 255, 0.9725490196), rgba(255, 255, 255, 0.9725490196)), url("/assets/doodle3.jpg");
+    background-position: center;
+    background-size: 50em;
+    background-repeat: repeat;
+    transition: 0.6s;
+  }
+  .nav .wrapper .menu ul {
+    position: relative;
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .nav .wrapper .menu ul li {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1.2em 0;
+    padding: 8px;
+  }
+  .nav .wrapper .menu ul li a {
+    position: relative;
+    font-size: 1.3em;
+  }
+  .nav .wrapper .menu .ex {
+    position: absolute;
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    top: 1.5em;
+    right: 2em;
+  }
+  .nav .wrapper .menu .ex .fa {
+    position: relative;
+    font-size: 2em;
+    color: #0E2954;
+  }
+  .nav .wrapper .sw {
+    position: relative;
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .nav .wrapper .sw .fa {
+    position: relative;
+    font-size: 1.5em;
+    color: #0E2954;
+  }
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.main .image {
+  position: relative;
+  width: 100%;
+  height: 25em;
+}
+.main .image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 10%;
+     object-position: center 10%;
+}
+.main .wrapper {
+  padding: 5em 0;
+}
+.main .wrapper h1 {
+  position: relative;
+  color: #0081C9;
+  font-size: 1.8em;
+}
+.main .wrapper p {
+  position: relative;
+  padding: 0.5em 0;
+}
+.main .wrapper .update {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+}
+.main .wrapper .update a {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  background: #fff;
+  padding: 1.5em 1.4em 1em;
+  border: 1px solid #1a518d;
+}
+.main .wrapper .update a .text {
+  position: relative;
+  width: 70%;
+  height: auto;
+}
+.main .wrapper .update a .text h2 {
+  position: relative;
+  font-size: 1.4em;
+  line-height: 1em;
+  color: #0E2954;
+}
+.main .wrapper .update a .text p {
+  position: relative;
+  color: #1d1d1d;
+}
+.main .wrapper .update a .text p span {
+  position: relative;
+  color: #0081C9;
+}
+.main .wrapper .update a .image {
+  position: relative;
+  width: 30%;
+  height: 100%;
+}
+.main .wrapper .update a .image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .wrapper .update:hover .text h2 {
+  text-decoration: underline;
+}
+.main .wrapper .update:hover .text p span {
+  text-decoration: underline;
+}
+
+@media (max-width: 780px) {
+  .main .image {
+    height: 20em;
+  }
+  .main .wrapper .update a {
+    flex-direction: column-reverse;
+  }
+  .main .wrapper .update a .text {
+    width: 100%;
+  }
+  .main .wrapper .update a .image {
+    width: 100%;
+  }
+}
+.footer {
+  position: relative;
+  background: #144272;
+  width: 100%;
+  height: auto;
+}
+.footer .wrapper {
+  padding: 6em 0 3em;
+}
+.footer .wrapper .row {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+.footer .wrapper .row .item {
+  position: relative;
+}
+.footer .wrapper .row .item .image {
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.footer .wrapper .row .item .image img {
+  position: relative;
+  width: 2em;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer .wrapper .row .item .image h4 {
+  position: relative;
+  color: #fff;
+  font-size: 1.2em;
+}
+.footer .wrapper .row .item p {
+  position: relative;
+  color: #fff;
+  font-size: 0.9em;
+  margin: 1em 0;
+}
+.footer .wrapper .row .item .conts {
+  position: relative;
+}
+.footer .wrapper .row .item .conts a {
+  position: relative;
+  display: block;
+  color: #fff;
+  margin: 0.5em 0;
+  font-size: 0.8em;
+}
+.footer .wrapper .row .item .conts a .fa {
+  position: relative;
+  color: #fff;
+  font-size: 1.4em;
+  margin: 0 0.5em 0 0;
+}
+.footer .wrapper .row .item .conts a:hover {
+  text-decoration: underline;
+}
+.footer .wrapper .row .item h3 {
+  position: relative;
+  font-size: 1em;
+  color: #fff;
+}
+.footer .wrapper .row .item ul {
+  position: relative;
+  margin: 1em 0;
+}
+.footer .wrapper .row .item ul li {
+  position: relative;
+}
+.footer .wrapper .row .item ul li a {
+  color: #fff;
+  font-size: 0.8em;
+}
+.footer .wrapper .row .item ul li a:hover {
+  text-decoration: underline;
+}
+.footer .wrapper .row .item table {
+  position: relative;
+  padding: 1em 0;
+}
+.footer .wrapper .row .item table tr {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.footer .wrapper .row .item table tr td {
+  color: #fff;
+  font-size: 0.8em;
+  padding: 0.4em 0.8em 0 0;
+}
+.footer .wrapper .row .item .quik {
+  position: relative;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.footer .wrapper .row .item .quik a {
+  position: relative;
+  padding: 0.5em;
+}
+.footer .wrapper .row .item .quik a .fa {
+  color: #fff;
+  font-size: 1.4em;
+}
+.footer .wrapper .row .abt {
+  width: 30%;
+}
+.footer .wrapper .row .svc {
+  width: 20%;
+}
+.footer .wrapper .row .lnk {
+  width: 20%;
+}
+.footer .wrapper .row .hrs {
+  width: 30%;
+}
+.footer .wrapper .end {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 1em 0 0;
+}
+.footer .wrapper .end p {
+  position: relative;
+  color: #fff;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+.footer .wrapper .end p span {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 780px) {
+  .footer .wrapper .row {
+    flex-direction: column;
+  }
+  .footer .wrapper .row .item {
+    width: 100%;
+  }
+}/*# sourceMappingURL=media.css.map */

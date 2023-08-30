@@ -1,0 +1,107 @@
+{% extends "janeiro/base.html" %}
+{% load i18n static %}
+
+{% block body %}
+    <div class="image">
+        <img src="{% static "/janeiro/assets/about4.JPG" %}" alt="about">
+    </div>
+    <div class="wrapper">
+        <h1>About Us</h1>
+        <p>
+            We are a level 4 hospital that is committed to providing exceptional healthcare services to our patients. At
+            Janeiro Hospital, we believe that every patient deserves the highest quality of care, and we strive to
+            deliver this care with compassion and expertise. Our team of highly trained physicians, nurses, and medical
+            staff work all together to provide a comprehensive range of medical services. At Janeiro Hospital, we are
+            committed to providing compassionate care and exceptional medical services to our patients.
+        </p>
+        <p>
+            At our hospital, we pride ourselves on providing exceptional healthcare services that prioritize the
+            well-being and satisfaction of our clients. With a team of highly skilled medical professionals,
+            state-of-the-art facilities, and a patient-centered approach, we offer a comprehensive range of services to
+            address the diverse healthcare needs of our clients.
+        </p>
+        <div class="info">
+            <div class="item">
+                <div class="image">
+                    <img src="{% static "/janeiro/assets/mission.png" %}" alt="mission">
+                </div>
+                <div class="txt">
+                    <h2>Our Mission</h2>
+
+                    <p>To offer quality holistic client centered healthcare through the use of modern technology,
+                        skilled manpower, training and other resources.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="{% static "/janeiro/assets/vision.png" %}" alt="Vision">
+                </div>
+                <div class="txt">
+                    <h2>Our Vision</h2>
+
+                    <p>To be a center of excellence in the provision of quality healthcare in East Africa and
+                        beyond.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="{% static "/janeiro/assets/coreValues.png" %}" alt="values">
+                </div>
+                <div class="txt">
+                    <h2>Our Core Values</h2>
+
+                    <p>The values that guide us include integrity, confidentiality, accountability, and teamwork.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+
+    <!-- faq -->
+
+    <div class="faq">
+        <div class="wrapper">
+            <h2>FAQs
+            </h2>
+            <details>
+                <summary>What services does your hospital facility provide?</summary>
+                <p>
+                    Our hospital facility offers a comprehensive range of medical services, including emergency care,
+                    inpatient and outpatient treatment, surgical procedures, diagnostic imaging, laboratory testing, and
+                    maternity services. We strive to provide high-quality healthcare across various specialties to meet
+                    the needs of our patients.
+                </p>
+            </details>
+            <details>
+                <summary>How do I find the location and contact information for your hospital facility?</summary>
+                <p>
+                    You can find the location and contact information for our hospital facility on our website. We have
+                    a dedicated "Contact Us" page that provides the address, phone numbers, and other relevant details.
+                    Additionally, you can use online mapping services or navigation apps to locate our facility.
+                </p>
+            </details>
+            <details>
+                <summary>Does your hospital facility have a pharmacy on-site?</summary>
+                <p>
+                    Yes, we have a pharmacy conveniently located within our hospital facility. Our pharmacy provides
+                    prescription medications, over-the-counter products, and pharmaceutical consultation services. It
+                    offers a convenient solution for patients to fill their prescriptions or seek guidance from licensed
+                    pharmacists.
+                </p>
+            </details>
+            <details>
+                <summary>How can I provide feedback or share my experience about your hospital facility?</summary>
+                <p>
+                    We welcome feedback and value your input regarding your experience at our hospital facility. You can
+                    provide feedback by reaching out to our Patient Relations department, completing patient
+                    satisfaction surveys if available, or sharing your thoughts on online review platforms. Your
+                    feedback helps us continually improve our services and ensure the best possible care for our
+                    patients.
+                </p>
+            </details>
+        </div>
+    </div>
+
+    <!-- faq -->
+{% endblock %}
