@@ -12,23 +12,19 @@
             informed and connected as we bring you the most recent advancements, breakthroughs, and insights from the
             world of healthcare.
         </p>
-
-        <div class="update">
-            <a href="{% static "/janeiro/assets/sickle.png" %}">
-                <div class="text">
-                    <h2>World Sickle Cell Day</h2>
-                    <p>
-                        Every year on June 19th, people around the globe come together to observe World Sickle Cell Day.
-                        This international awareness day aims to shed light on a genetic blood disorder called sickle
-                        cell disease (SCD) and honor the strength and resilience of those affected by it. <span>Read more.</span>
-                    </p>
-                </div>
-                <div class="image">
-                    <img src="{% static "/janeiro/assets/sickle.png" %}" alt="sickle cell">
-                </div>
-            </a>
-        </div>
-
-
+        {% for article in articles %}
+            <div class="update">
+                <a href="{{ article.get_absolute_url }}">
+                    <div class="text">
+                        <h2>{{ article.title }}</h2>
+                        <p>{{ article.content |safe|striptags|truncatechars:250 }}<span>Read more.</span>
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="{{ article.cover_image.url }}" alt="sickle cell">
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}

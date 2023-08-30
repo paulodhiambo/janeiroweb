@@ -3,84 +3,9 @@
 
 {% block body %}
     <div class="image">
-        <img src="/janeiro/assets/sickleCell.png" alt="about">
+        <img src="{{ article.cover_image.url }}" alt="about">
     </div>
     <div class="wrapper">
-        <h1>World Sickle Cell Day</h1>
-        <p>
-            Every year on June 19th, people around the globe come together to observe World Sickle Cell Day. This
-            international awareness day aims to shed light on a genetic blood disorder called sickle cell disease (SCD)
-            and honor the strength and resilience of those affected by it. With this year’s theme being <i>“Bridging the
-            Gaps towards optimum care and control of Sickle Cell Disease,”</i> we at Janeiro Hospital delve into the
-            significance of this day, understand the impact of SCD on individuals and communities, and explore how we
-            can make a difference in the lives of those living with this condition.
-        </p>
-        <h2>Understanding Sickle Cell Disease</h2>
-        <p>
-            Sickle cell disease is an inherited blood disorder that affects the shape and function of red blood cells.
-            People with SCD have abnormal hemoglobin, a protein responsible for carrying oxygen throughout the body. As
-            a result, their red blood cells become rigid and shaped like a crescent or a sickle, causing them to get
-            stuck in blood vessels, leading to pain, organ damage, and other complications.
-        </p>
-        <div class="image">
-            <img src="/janeiro/assets/SickleCellAnemia.jpg" alt="SickleCellAnemia">
-        </div>
-        <h2>The Impact on Individuals and Communities</h2>
-        <p>
-            Sickle cell disease affects millions of people worldwide, predominantly in sub-Saharan Africa, the Middle
-            East, and certain parts of the Mediterranean region. However, due to migration and global movement, SCD is
-            now a global health concern. According to a report by the WHO in 2019, it is estimated that around 300,000
-            babies are born with SCD each year.
-        </p>
-        <p>
-            Living with SCD can be incredibly challenging, both physically and emotionally. Individuals with SCD often
-            experience chronic pain episodes known as "crises," which can require hospitalization and result in a
-            reduced quality of life. Moreover, SCD can lead to a range of complications such as anemia, organ damage,
-            increased susceptibility to infections, and a shorter lifespan.
-        </p>
-        <h2>The Significance of World Sickle Cell Day</h2>
-        <p>
-            World Sickle Cell Day serves as a vital platform to raise awareness about this often misunderstood and
-            overlooked condition. It aims to dispel misconceptions surrounding SCD and foster a better understanding of
-            the challenges faced by individuals living with the disease.
-        </p>
-        <p>
-            On this day, various organizations, healthcare professionals, advocacy groups, and individuals affected by
-            SCD come together to promote education, access to care, and support for those with the disease. The
-            objective is to empower individuals with SCD, provide resources and information, and advocate for policies
-            that improve their quality of life
-        </p>
-        <h2>Making a Difference</h2>
-        <p>
-            There are several ways we can contribute to the well-being of individuals with sickle cell disease and their
-            families:
-        <ol>
-            <li><strong>Education and Awareness: </strong>Educate yourself and others about SCD by sharing accurate
-                information and dispelling myths. Promote awareness campaigns through social media, community events,
-                and educational initiatives to help foster understanding and empathy.
-            </li>
-            <li><strong>Support and Empathy: </strong>Extend your support to individuals with SCD and their families.
-                Offer a listening ear, show empathy, and create a safe space for them to share their experiences. By
-                showing compassion and understanding, we can help alleviate the emotional burdens associated with the
-                disease.
-            </li>
-            <li><strong>Advocacy and Funding: </strong> Support organizations and initiatives dedicated to raising
-                awareness and improving the lives of individuals with SCD. Advocate for increased research funding,
-                improved access to healthcare services, and policies that prioritize the needs of those with the
-                disease.
-            </li>
-            <li><strong>Blood and Stem Cell Donations: </strong>Consider donating blood and registering as a potential
-                stem cell donor. Blood transfusions are often a crucial part of managing complications associated with
-                SCD, while stem cell transplants offer a potential cure for some individuals with the disease.
-            </li>
-        </ol>
-        </p>
-        <p>
-            In conclusion, World Sickle Cell Day serves as a powerful reminder of the strength, resilience, and spirit
-            of individuals living with sickle cell disease. By coming together, raising awareness, and advocating for
-            better care, we can make a significant impact in the lives of those affected by this condition. Let us stand
-            together to support those affected, celebrate their strength and resilience, and work towards a future where
-            sickle cell disease no longer hinders the pursuit of a fulfilling life.
-        </p>
+        {{ article.content | safe }}
     </div>
 {% endblock %}
