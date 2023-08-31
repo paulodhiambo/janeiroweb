@@ -30,3 +30,13 @@ class Article(models.Model):
 
     def get_absolute_url(self):
         return reverse('article-detail', args=[self.slug])
+
+
+class Career(models.Model):
+    title = models.CharField(max_length=500)
+    content = RichTextUploadingField()
+    published_at = models.DateTimeField(auto_now=True)
+    is_open = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.title
